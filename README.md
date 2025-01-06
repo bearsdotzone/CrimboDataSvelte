@@ -2,7 +2,7 @@ A little tool for analyzing Crimbo 2024 session logs.
 
 **Not** designed to work for anybody else but me, bearsdotzone, and may be buggy.
 
-If you want to try regardless, in .env set `SESSIONPATH` to your KolMafia sessions directory and `USERNAME` to your
+If you want to try regardless, in `.env` set `SESSIONPATH` to your KolMafia sessions directory and `USERNAME` to your
 username.
 
 Then `npm install` and `npm run dev`
