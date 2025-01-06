@@ -1,38 +1,13 @@
-# sv
+A little tool for analyzing Crimbo 2024 session logs.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Not** designed to work for anybody else but me, bearsdotzone, and may be buggy.
 
-## Creating a project
+If you want to try regardless, in .env set `SESSIONPATH` to your KolMafia sessions directory and `USERNAME` to your
+username.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Then `npm install` and `npm run dev`
 
-```bash
-# create a new project in the current directory
-npx sv create
+For developers:
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+All the parsing logic takes place in `src/routes/+page.server.ts`. The webpage is defined in `src/routes/+page.svelte`
+and is largely just chart.js wrangling.

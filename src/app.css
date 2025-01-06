@@ -1,0 +1,6 @@
+:root, body, main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100vw;
+}
